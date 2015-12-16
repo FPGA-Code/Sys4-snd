@@ -1,5 +1,6 @@
 -- Sound board used on Williams System 3 and System 4 pinball machines. There seems to be only one ROM image used in all of these games. 
--- 2015 James Sweet
+-- (c)2015 James Sweet
+--
 -- This is free software: you can redistribute
 -- it and/or modify it under the terms of the GNU General
 -- Public License as published by the Free Software
@@ -136,7 +137,7 @@ port map(
 	q => rom_dout
 	);
 
-	-- Delta Sigma DAC
+-- Delta Sigma DAC
 Audio_DAC: entity work.dac
 port map(
    clk_i   	=> dac_clk,
